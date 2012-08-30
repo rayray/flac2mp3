@@ -6,12 +6,11 @@ filename, quality = ARGV[0], ARGV[1]
 abort "Usage: flac2mp3 FLACFILE [V2|V1|V0|320]\nDefault (and recommended) quality is V0." if filename.nil?
 
 qualarg = case quality
-when "V0","V1","V2" then quality
-when "320" then "b 320"
-else "V0"
+    when "V0","V1","V2" then quality
+    when "320" then "b 320"
+    else "V0"
 end
 
-abort "quality is #{qualarg}"
 map = {"TITLE" => "--tt", "ARTIST" => "--ta", "ALBUM" => "--tl", "TRACKNUMBER" => "--tn", "GENRE" => "--tg", "DATE" => "--ty"}
 args = ""
 
