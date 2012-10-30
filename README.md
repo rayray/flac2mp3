@@ -11,3 +11,7 @@ Simple script to convert a FLAC to MP3.  Carries over artist, title, album, year
 ##Usage
 `flac2mp3 FLACFILE [V2 | V1 | V0 | 320]`
 Default quality is V0.
+
+##Credits and Changes
+- mxcl wrote the original script
+- I added quality specification
