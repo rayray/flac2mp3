@@ -1,7 +1,12 @@
 # flac2mp3
 
-This is a fork of mxcl's http://gist.github.com/gists/124242 with some bugfixes
-and an extension for specifying quality.
+## Homebrew
+This script is included when you `brew install flac`
+
+http://mxcl.github.com/homebrew/
+
+## Description
+Simple script to convert a FLAC to MP3.  Carries over artist, title, album, year, and genre metadata.
 
 ##Usage
 `flac2mp3 FLACFILE [V2 | V1 | V0 | 320]`
