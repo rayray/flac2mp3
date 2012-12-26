@@ -23,4 +23,4 @@ end
 basename = File.basename(filename, File.extname(filename))
 
 puts "Encoding #{basename}.mp3"
-exec %Q[flac -sdc "#{filename}" | lame -#{qualarg} #{args} - "#{basename}.mp3"]
+exec %Q[flac -sdc "#{filename}" | lame --ignore-tag-errors -#{qualarg} #{args} - "#{basename}.mp3"]
